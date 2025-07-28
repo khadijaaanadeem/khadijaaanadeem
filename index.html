@@ -1,4 +1,77 @@
-<!-- Semantic Book Recommender -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio of Khadija Nadeem" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Khadija Nadeem</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="#" class="link">KN.</a>
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item"><a class="link link--nav" href="#projects">Projects</a></li>
+          <li class="nav__list-item"><a class="link link--nav" href="#skills">Skills</a></li>
+          <li class="nav__list-item"><a class="link link--nav" href="#contact">Contact</a></li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1> <span class="about__name">Khadija Nadeem</span></h1>
+        <h2 class="about__role">A Computer Science Student & ML Developer.</h2>
+        <p class="about__desc">
+          I am a CS student at Penn State building impactful AI/ML apps—like fraud detectors, book recommenders, and resume editors—powered by LLMs, deep learning, and intuitive UIs.
+        </p>
+
+       <div class="about__contact center">
+  <!-- Resume Button -->
+  <a href="Resume (10).pdf" download>
+    <span class="btn btn--outline">Resume</span>
+  </a>
+
+  <!-- GitHub Icon -->
+  <a href="https://github.com/khadijaaanadeem" aria-label="GitHub" class="link link--icon" target="_blank" rel="noopener">
+    <i class="fab fa-github" aria-hidden="true"></i>
+  </a>
+
+  <!-- LinkedIn Icon -->
+  <a href="https://www.linkedin.com/in/khadijaanadeem" aria-label="LinkedIn" class="link link--icon" target="_blank" rel="noopener">
+    <i class="fab fa-linkedin" aria-hidden="true"></i>
+  </a>
+</div>
+
+
+      <!-- Projects -->
+<section id="projects" class="section projects">
+  <h2 class="section__title">Projects</h2>
+
+  <!-- Semantic Book Recommender -->
 <div class="project">
   <h3>Semantic Book Recommender</h3>
   <p class="project__description">
@@ -9,12 +82,10 @@
     <li class="project__stack-item">Hugging Face</li>
     <li class="project__stack-item">Python</li>
   </ul>
-  <a href="https://github.com/khadijaaanadeem/BookRecommender" target="_blank" class="project__link">
-    View on GitHub ↗
-  </a>
-  <a href="https://youtu.be/zAz5sdbbuoc" target="_blank" class="project__link">
-    Watch Demo ↗
-  </a>
+  <div class="project__links">
+    <a href="https://github.com/khadijaaanadeem/BookRecommender" target="_blank" class="project__link">View on GitHub ↗</a>
+    <a href="https://youtu.be/zAz5sdbbuoc" target="_blank" class="project__link">Demo Video ↗</a>
+  </div>
 </div>
 
 <!-- Resume Editor -->
@@ -28,12 +99,10 @@
     <li class="project__stack-item">Gradio</li>
     <li class="project__stack-item">Python</li>
   </ul>
-  <a href="https://github.com/khadijaaanadeem/ResumeEditorLLM" target="_blank" class="project__link">
-    View on GitHub ↗
-  </a>
-  <a href="https://youtu.be/JQxksy3B8gQ" target="_blank" class="project__link">
-    Watch Demo ↗
-  </a>
+  <div class="project__links">
+    <a href="https://github.com/khadijaaanadeem/ResumeEditorLLM" target="_blank" class="project__link">View on GitHub ↗</a>
+    <a href="https://youtu.be/JQxksy3B8gQ" target="_blank" class="project__link">Demo Video ↗</a>
+  </div>
 </div>
 
 <!-- Credit Card Fraud Detection -->
@@ -47,11 +116,55 @@
     <li class="project__stack-item">SMOTE</li>
     <li class="project__stack-item">SHAP</li>
   </ul>
-  <a href="https://github.com/khadijaaanadeem/CreditCardFraudDetection" target="_blank" class="project__link">
-    View on GitHub ↗
-  </a>
-  <a href="https://youtu.be/qAmVNgNKews" target="_blank" class="project__link">
-    Watch Demo ↗
-  </a>
+  <div class="project__links">
+    <a href="https://github.com/khadijaaanadeem/CreditCardFraudDetection" target="_blank" class="project__link">View on GitHub ↗</a>
+    <a href="https://youtu.be/qAmVNgNKews" target="_blank" class="project__link">Demo Video ↗</a>
+  </div>
 </div>
 
+
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">HTML/CSS</li>
+          <li class="skills__list-item btn btn--plain">TensorFlow</li>
+          <li class="skills__list-item btn btn--plain">Keras</li>
+          <li class="skills__list-item btn btn--plain">Gradio</li>
+          <li class="skills__list-item btn btn--plain">Hugging Face</li>
+          <li class="skills__list-item btn btn--plain">LangChain</li>
+          <li class="skills__list-item btn btn--plain">OpenCV</li>
+          <li class="skills__list-item btn btn--plain">scikit-learn</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:khadija.nadeem714@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="https://www.dawn.com/news/1926244" class="link footer__link">
+        Read My Article in Dawn News
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
